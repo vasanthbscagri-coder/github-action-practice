@@ -4,8 +4,8 @@ name: Python Data Analysis Pipeline
 on:
   push:
     branches: [ "dev" ]
-  pull_request:
-    branches: [ "dev" ]
+  # pull_request:
+  #   branches: [ "dev" ]
   # Optional: Run automatically every Monday morning at midnight UTC
   # schedule:
   #   - cron: '0 0 * * 1'
