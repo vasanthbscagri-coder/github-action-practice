@@ -21,6 +21,10 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
-            - name: print
-              run: echo "hello-world" 
+        
+            - name: copy the file into vm
+              uses: actions/checkout@v4
+              
+            - name: run sh file
+              run: hello.sh
     
