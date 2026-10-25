@@ -1,5 +1,6 @@
 import csv
 import os
+import pandas
 
 def extract(input_file):
     print("Starting data extraction...")
