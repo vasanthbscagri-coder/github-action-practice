@@ -3,7 +3,7 @@ name: Python ETL Pipeline
 on:
   push:
     branches:
-      - main
+      - etl
 
 jobs:
   run_etl:
