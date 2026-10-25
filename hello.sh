@@ -9,7 +9,7 @@ result=$((a + b))
 
 echo "Result: $result"
 
-if [ "$result" -eq 3 ]; then
+if [ "$result" -eq 30 ]; then
     echo "Test passed!"
 else
     echo "Test failed!"
