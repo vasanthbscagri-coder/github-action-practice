@@ -13,18 +13,18 @@
 #       - name: Run Bash script
 #         run: bash hello.sh
 
-name : test-workflow
-on:
-    push:
-jobs:
-    ubuntu-vm:
-        runs-on: ubuntu-latest
+# name : test-workflow
+# on:
+#     push:
+# jobs:
+#     ubuntu-vm:
+#         runs-on: ubuntu-latest
         
-        steps:
+#         steps:
         
-            - name: copy the file into vm
-              uses: actions/checkout@v4
+#             - name: copy the file into vm
+#               uses: actions/checkout@v4
               
-            - name: run sh file
-              run: bash hello.sh
+#             - name: run sh file
+#               run: bash hello.sh
     
