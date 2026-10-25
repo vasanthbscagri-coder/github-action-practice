@@ -1,14 +1,26 @@
-name: My First Workflow
+# name: My First Workflow
 
-on: push
+# on: push
 
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Download repository
+#         uses: actions/checkout@v4
+
+#       - name: Run Bash script
+#         run: bash hello.sh
+
+name : test-workflow
+on:
+    push:
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Download repository
-        uses: actions/checkout@v4
-
-      - name: Run Bash script
-        run: bash hello.sh
+    ubuntu-vm:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: print
+              run:echo"hello-world" 
+    
