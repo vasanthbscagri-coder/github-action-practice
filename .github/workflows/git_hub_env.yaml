@@ -19,5 +19,5 @@ jobs:
         env:
           MY_FAKE_VAR: "variable value"
         run: |
-          echo "The variable value is: $MY_FAKE_VAR"
+          echo "The variable value is: $MY_ENV"
           echo "Current date: $(date)"  
