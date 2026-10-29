@@ -1,8 +1,8 @@
-name: Sandbox Practice
+name: github-environment-variable
 
 on:
   push:
-  workflow_dispatch: # This lets you manually trigger it from the GitHub website!
+  workflow_dispatch: 
 
 jobs:
   test-environment:
@@ -13,11 +13,11 @@ jobs:
 
     steps:
       - name: Say Hello
-        run: echo "Hello from my practice sandbox!"
+        run: echo "Hello from my practice!"
 
       - name: Test printing a fake variable
         env:
-          MY_FAKE_VAR: "Hello Variable"
+          MY_FAKE_VAR: "variable value"
         run: |
           echo "The variable value is: $MY_FAKE_VAR"
-          echo "Current date: $(date)"
+          echo "Current date: $(date)"  
