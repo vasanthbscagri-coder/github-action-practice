@@ -1,0 +1,23 @@
+name: Sandbox Practice
+
+on:
+  push:
+  workflow_dispatch: # This lets you manually trigger it from the GitHub website!
+
+jobs:
+  test-environment:
+    runs-on: ubuntu-latest
+    
+    # Optional: Practice environments later by uncommenting this
+    # environment: production
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello from my practice sandbox!"
+
+      - name: Test printing a fake variable
+        env:
+          MY_FAKE_VAR: "Hello Variable"
+        run: |
+          echo "The variable value is: $MY_FAKE_VAR"
+          echo "Current date: $(date)"
